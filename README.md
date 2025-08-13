@@ -164,166 +164,36 @@ Objective : addition of matrix in C++
 10. End
 
 # Program 2
-Objective : addition of diagonal elements of matrix
+Objective : addition of diagonal elements of a matrix
 
-Today
-#include <iostream> using namespace std; int main() { int row,column; cout<<"Enter the number of rows: "<<endl; cin>>row; cout<<"Enter the number of columns: "<<endl; cin>>column; int arr1[row][column],arr2[row][column],arr3[row][column]; cout<<"Array 1: "<<endl; for (int i=0;i<row;i++) { for (int j=0;j<column;j++) { cin>>arr1[i][j]; } } cout<<"Array 2: "<<endl; for (int i=0;i<row;i++){ for (int j=0;j<column;j++) { cin>>arr2[i][j]; } } for (int i=0;i<row;i++) { for (int j=0;j<column;j++) { arr3[i][j]=arr1[i][j]+arr2[i][j]; } } cout<<"Array 1: "<<endl; for (int i=0;i<row;i++) { for (int j=0;j<column;j++) { cout<<arr1[i][j]<<"\t"; } cout<<endl; } cout<<"Array 2: "<<endl; for (int i=0;i<row;i++){ for (int j=0;j<column;j++) { cout<<arr2[i][j]<<"\t"; } cout<<endl; } cout<<"Addition: "<<endl; for (int i=0;i<row;i++) { for (int j=0;j<column;j++) { cout<<arr3[i][j]<<"\t"; } cout<<endl; } } /*Output of the code Enter the number of rows: 3 Enter the number of columns: 3 Array 1: 1 2 3 4 5 6 7 8 9 Array 2: 9 8 7 6 5 4 3 2 1 Array 1: 1 2 3 4 5 6 7 8 9 Array 2: 9 8 7 6 5 4 3 2 1 Addition: 10 10 10 10 10 10 10 10 10 */ give theorm for this code
-Sure! Here's a theorem-style explanation that encapsulates the logic and behavior of your C++ program:
-
-🧮 Theorem: Matrix Addition of Two-Dimensional Arrays
-Statement: Let 
-𝐴
- and 
-𝐵
- be two matrices of dimensions 
-𝑚
-×
-𝑛
-, where 
-𝑚
- is the number of rows and 
-𝑛
- is the number of columns. Then, there exists a matrix 
-𝐶
- of the same dimensions such that:
-
-𝐶
-[
-𝑖
-]
-[
-𝑗
-]
-=
-𝐴
-[
-𝑖
-]
-[
-𝑗
-]
-+
-𝐵
-[
-𝑖
-]
-[
-𝑗
-]
-for all 
-0
-≤
-𝑖
-<
-𝑚
-,
- 
-0
-≤
-𝑗
-<
-𝑛
-Proof (via Algorithm): Given:
-
-Two matrices arr1 and arr2 of size row × column
-
-A third matrix arr3 to store the sum
-
-The program:
-
-Accepts user input for dimensions row and column.
-
-Reads elements of arr1 and arr2.
-
-Computes arr3[i][j] = arr1[i][j] + arr2[i][j] for each valid index.
-
-Displays all three matrices.
-
-Conclusion: The program demonstrates the element-wise addition of two matrices. The resulting matrix arr3 contains the sum of corresponding elements from arr1 and arr2, satisfying the theorem.
-
-Would you like a visual diagram or pseudocode version of this theorem too?
-
-give algorithm for the code given above
-Absolutely! Here's a clear and structured algorithm for your C++ program that performs matrix addition:
-
-🧮 Algorithm: Matrix Addition of Two 2D Arrays
-Input:
-
-Number of rows row
-
-Number of columns column
-
-Elements of matrix arr1[row][column]
-
-Elements of matrix arr2[row][column]
-
-Output:
-
-Matrix arr3[row][column] containing the sum of arr1 and arr2
-
-🔢 Steps:
+🧮 Steps:
 
 1. Start
 
-2. Read matrix dimensions
+2. Initialize matrix
 
-                Prompt user to enter row
-                
-                Prompt user to enter column
+        Define a 3×3 matrix:
+        
+        matrix = {
+          {1, 2, 3},
+          {4, 5, 6},
+          {7, 8, 9}
+        }
+3. Initialize sum
 
-3. Declare matrices
+        Set sum = 0
 
-                Create three 2D arrays: arr1[row][column], arr2[row][column], arr3[row][column]
+4. Iterate through main diagonal
+        
+        For i = 0 to 2:
+        
+        Add matrix[i][i] to sum
 
-4. Input elements of Matrix 1
+5. Display result
 
-                For each i from 0 to row - 1:
+        Print "Sum of main diagonal: " followed by sum
 
-                For each j from 0 to column - 1:
-
-                Read arr1[i][j]
-
-5. Input elements of Matrix 2
-
-                For each i from 0 to row - 1:
-                
-                For each j from 0 to column - 1:
-                
-                Read arr2[i][j]
-
-6. Compute Matrix Addition
-
-                For each i from 0 to row - 1:
-                
-                For each j from 0 to column - 1:
-                
-                Set arr3[i][j] = arr1[i][j] + arr2[i][j]
-
-7. Display Matrix 1
-
-                For each i from 0 to row - 1:
-                
-                For each j from 0 to column - 1:
-                
-                Print arr1[i][j]
-
-8. Display Matrix 2
-
-                For each i from 0 to row - 1:
-                
-                For each j from 0 to column - 1:
-                
-                Print arr2[i][j]
-
-9. Display Resultant Matrix (Addition)
-
-                For each i from 0 to row - 1:
-                
-                For each j from 0 to column - 1:
-                
-                Print arr3[i][j]
-
-10. End
+6. End
 
 # Program 3
 Objective : multiplication of two matrix

@@ -89,11 +89,79 @@ cpp
 
 7. Alternatives in Modern C++
 
-Vectors of Vectors (vector<vector<int>>) for dynamic resizing.
+a.Vectors of Vectors (vector<vector<int>>) for dynamic resizing.
 
-Dynamic Arrays (new and delete for heap allocation).
+b.Dynamic Arrays (new and delete for heap allocation).
 
-Libraries (Eigen, Armadillo) for advanced matrix operations.
+c.Libraries (Eigen, Armadillo) for advanced matrix operations.
+
+# Algorithm
+
+# Program 1
+Objective : addition of matrix in C++
+
+🔢 Steps:
+1. Start
+
+2. Read matrix dimensions
+
+                Prompt user to enter row
+                
+                Prompt user to enter column
+
+3. Declare matrices
+
+                Create three 2D arrays: arr1[row][column], arr2[row][column], arr3[row][column]
+
+4. Input elements of Matrix 1
+
+                For each i from 0 to row - 1:
+                
+                For each j from 0 to column - 1:
+                
+                Read arr1[i][j]
+
+5. Input elements of Matrix 2
+
+                For each i from 0 to row - 1:
+                
+                For each j from 0 to column - 1:
+                
+                Read arr2[i][j]
+
+6. Compute Matrix Addition
+
+                For each i from 0 to row - 1:
+                
+                For each j from 0 to column - 1:
+                
+                Set arr3[i][j] = arr1[i][j] + arr2[i][j]
+
+7. Display Matrix 1
+
+                For each i from 0 to row - 1:
+                
+                For each j from 0 to column - 1:
+                
+                Print arr1[i][j]
+
+8. Display Matrix 2
+
+                For each i from 0 to row - 1:
+                
+                For each j from 0 to column - 1:
+                
+                Print arr2[i][j]
+
+9. Display Resultant Matrix (Addition)
+
+                For each i from 0 to row - 1:
+                
+                For each j from 0 to column - 1:
+                
+                Print arr3[i][j]
+
+10. End
 
 Conclusion
 
